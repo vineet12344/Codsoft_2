@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #262d31; /* Dark background similar to WhatsApp */
+    color: #fff; /* Light text */
+}
+
+#message-container {
+    flex: 1;
+    padding: 20px;
+    overflow-y: scroll; /* Enable scrolling for overflow content */
+    background-color: #343a40; /* Darker background similar to WhatsApp */
+    border-radius: 10px; /* Rounded corners */
+}
+.message {
+    margin-bottom: 10px; /* Space between message containers */
+    padding: 10px; /* Padding inside each message container */
+    border-radius: 8px; /* Rounded corners */
+}
+
+#message-container:nth-child(odd) {
+    background-color: #343a40; /* Darker background similar to WhatsApp for odd-numbered messages */
+}
+
+#message-container:nth-child(even) {
+    background-color: #454d53; /* Even-numbered messages have a different background color */
+}
+
+#send-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #343a40; /* Darker background similar to WhatsApp */
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 20px; /* Spacing between message container and input container */
+}
+
+#message-input {
+    flex: 1;
+    padding: 8px;
+    border: none; /* No border */
+    border-radius: 20px; /* Rounded input */
+    margin-right: 10px;
+    background-color: #454d53; /* Darker input background */
+    color: #fff; /* Light text */
+    outline: none; /* Remove outline on focus */
+}
+
+#send-button {
+    padding: 8px 16px;
+    background-color: #007bff; /* Blue send button similar to WhatsApp */
+    color: #fff;
+    border: none;
+    border-radius: 20px; /* Rounded button */
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
