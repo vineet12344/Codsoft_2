@@ -6,11 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "devStart": "nodemon server.js"
-
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap-modbox": "^1.6.2",
     "socket.io": "^4.7.4"
   },
   "devDependencies": {
